@@ -1,5 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Oswald:wght@200&display=swap');
 
+*{
+    font-family: Cinzel;
+}
 
-* {
+.ExpenseTable{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
+.Charts{
+    display: flex;
+    margin-left: 300px;
+}
+/* .DateChart {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: auto;
+} */
+.Footer{
+    text-align: center;
+    background-color:white;
+    color: black;
+    padding: 8px;
 }
