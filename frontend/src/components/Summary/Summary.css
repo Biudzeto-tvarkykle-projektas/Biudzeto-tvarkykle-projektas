@@ -1,0 +1,28 @@
+#table {
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+#table, th, tr, td {
+    border: 2px solid #C3DED7;
+    padding: 8px;
+}
+
+.edit {
+    background-color: white;
+    border: 2px solid #C3DED7;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 18px;
+}
+
+.delete {
+    background-color: orangered;
+    border: 2px solid orangered;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 18px;
+    color: white;
+}

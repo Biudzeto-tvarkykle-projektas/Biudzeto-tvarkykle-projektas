@@ -1,0 +1,18 @@
+{
+  "irasai": [
+    {
+      "data": "2015-05-04",
+      "pavadinimas": "Pirmas",
+      "suma": "100",
+      "paskirtis": "Įplaukos",
+      "id": 1
+    },
+    {
+      "data": "2022-04-13",
+      "pavadinimas": "Antras",
+      "suma": "300",
+      "paskirtis": "Išlaidos",
+      "id": 2
+    }
+  ]
+}

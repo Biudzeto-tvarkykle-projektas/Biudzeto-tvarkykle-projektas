@@ -1,0 +1,37 @@
+.total {
+    width: 100%;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 48px;
+}
+
+.total-box {
+    flex: 1;
+
+    border: 1px solid #C3DED7;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.total-box p {
+    padding: 18px;
+}
+
+.total-box p:first-child {
+    background-color: #C3DED7;
+}
+
+.box-1 p:first-child {
+    color: #1FDB39;
+}
+
+.box-2 p:first-child {
+    color: #DB1A03
+}
+
+.box-3 p:first-child {
+    color: royalblue;
+}

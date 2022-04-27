@@ -1,0 +1,25 @@
+#form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#form div {
+    border: 2px solid #C3DED7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#form div input {
+    outline: none;
+    border: none;
+}
+
+#form button {
+    background-color: royalblue;
+    color: white;
+    padding: 10px ;
+    border: 2px solid #C3DED7;
+    border-radius: 10px;
+    cursor: pointer;
+}
