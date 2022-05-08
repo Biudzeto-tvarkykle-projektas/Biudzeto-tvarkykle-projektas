@@ -10,7 +10,9 @@ function Table(props){
                         <td>Data</td>
                         <td>Išlaidų pavadinimas</td>
                         <td>Suma</td>
+                        
                         <td>Veiksmai</td>
+                        
                     </tr>
                 </thead>
                 <tbody style={{textAlign: "center"}}>

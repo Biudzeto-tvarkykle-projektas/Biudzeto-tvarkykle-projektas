@@ -8,13 +8,16 @@ class Form extends Component{
         this.state={
             "date": "",
             "title": "",
-            "amount": ""
+            
+            "amount": "",
+            
         }
     }
 
     handleChange(event){
         const name = event.target.name;
         const value = event.target.value;
+        
         let obj = {}
         obj["" +name] = value;
 
@@ -64,7 +67,7 @@ class Form extends Component{
                 <div className="form-group mr-1">
                     <input type="text"  className="form-control"  onChange={this.handleChange.bind(this)}  placeholder="Suma" name="amount" value={this.state.amount} />
                 </div>
-                <button type="submit" className="btn btn-primary" disabled={!this.valid()}> Create Record</button>
+                <button type="submit" className="btn btn-primary" disabled={!this.valid()}>Išsaugoti</button>
             </form>
         );
     }

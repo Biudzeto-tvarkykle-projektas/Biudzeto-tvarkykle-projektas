@@ -6,7 +6,7 @@
 
 import Form from './Form';
 import React, { Component } from 'react'; 
-// import Summary from './Summary';
+import Total from './Total';
 import Table from './Table';
 import * as RecordsAPI from './ReacordsAPI';
 
@@ -114,11 +114,11 @@ class App extends Component{
 
                 <br />
 
-                {/* <div className="row mb-3">
-                    <Summary text="Credit" type="success" amount={this.credits()} />
-                    <Summary text="Debit" type="danger" amount={this.debits()} />
-                    <Summary text="Balansas" type="info" amount={this.balance()} />
-                </div> */}
+                <div className="row mb-3">
+                    <Total text="Įplaukos" type="success" amount={this.credits()} />
+                    <Total text="Išlaidos" type="danger" amount={this.debits()} />
+                    <Total text="Turimos lėšos" type="info" amount={this.balance()} />
+                </div>
                 <br />
                 <Form handleAddRecord={this.addRecord.bind(this)}/>
 
