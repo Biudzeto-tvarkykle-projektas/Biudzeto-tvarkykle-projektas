@@ -53,6 +53,8 @@ class Form extends Component{
         return this.state.date && this.state.title && this.state.amount;
     }
 
+    
+
     render(){
         return (
             <form className="form-inline mb-3" onSubmit={this.handleSubmit.bind(this)}>

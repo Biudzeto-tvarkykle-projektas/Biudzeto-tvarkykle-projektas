@@ -1,8 +1,3 @@
-// import Navbar from './components/Navbar';
-// import './App.css';
-// import { BrowserRouter as Router, Route} from 'react-router-dom';
-// import Form from './components/Form';
-
 
 import Form from './Form';
 import React, { Component } from 'react'; 
