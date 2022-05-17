@@ -9,9 +9,7 @@ function Summary() {
   function istrintiIrasa(id) {
     fetch('http://localhost:8000/irasai/' + id, {
       method: 'DELETE'
-    }).then(() => {
-      
-    })
+    }).then(() => {})
   }
 
   return (
@@ -27,15 +25,15 @@ function Summary() {
   {error && <div>Error: {error}</div>}
   {loading && <div>Loading...</div>}
 
-  {data?.map((irasas, i)=> (
-    <tr key={i}>
+  {data?.map((irasas)=> (
+    <tr key={irasas.id}>
       <td>{irasas.data}</td>
       <td>{irasas.pavadinimas}</td>
       <td style={{ color: irasas.paskirtis === 'Įplaukos'? 'green': 'red'}}>{irasas.paskirtis}</td>
       <td>{irasas.suma}</td>
       <td>
         <button className='edit'>Pakeisti</button>
-        <button className='delete' onClick={() => istrintiIrasa(i + 1)}>Ištrinti</button>
+        <button className='delete' onClick={() => istrintiIrasa(irasas.id)}>Ištrinti</button>
       </td>
     </tr>
   ))}
