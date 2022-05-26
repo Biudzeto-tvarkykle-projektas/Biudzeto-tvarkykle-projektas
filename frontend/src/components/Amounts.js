@@ -16,9 +16,9 @@ import Register from "./Register";
 import Home from "./Home";
 import Profile from "./Profile";
 import BoardUser from "./BoardUser";
-// import BoardModerator from "../components/BoardModerator";
-// import BoardAdmin from "../components/BoardAdmin";
-// import App from "../components/App";
+import BoardModerator from "./BoardModerator";
+ import BoardAdmin from "./BoardAdmin";
+//  import App from "../components/App";
 
 // ----------------------------------------
 class App extends Component {
