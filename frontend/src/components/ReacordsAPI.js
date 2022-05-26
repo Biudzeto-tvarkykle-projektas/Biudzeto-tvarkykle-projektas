@@ -1,4 +1,5 @@
 import axios from 'axios';
+import authHeader from "../services/auth-header";
 const mockData = process.env.REACT_APP_RECORDS_API_URL || "http://localhost:8080/api"
 
 // "jdbc:h2:file:/data/demo"
@@ -6,7 +7,7 @@ const mockData = process.env.REACT_APP_RECORDS_API_URL || "http://localhost:8080
 // https://62641f9098095dcbf92bc5da.mockapi.io
 // 
 export const getAll = () =>
-  axios.get(`${mockData}/amounts`)
+  axios.get(`${mockData}/amounts`, { headers: authHeader() })
 
 export const create = (body) =>
   axios.post(`${mockData}/amounts`, body)
